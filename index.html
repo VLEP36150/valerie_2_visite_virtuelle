@@ -2,10 +2,28 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>TEST</title>
+  <title>Ma visite virtuelle</title>
+
+  <!-- Adapté ordinateur et téléphone -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- A-Frame -->
+  <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Ça marche !</h1>
-  <p>Si tu vois ce texte, GitHub Pages fonctionne.</p>
+
+  <a-scene>
+    <!-- Image 360 -->
+    <a-sky src="R0010188.jpg" rotation="0 -130 0"></a-sky>
+  </a-scene>
+
 </body>
 </html>
