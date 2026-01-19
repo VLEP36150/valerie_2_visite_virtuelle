@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html lang="fr"> 
+<head> 
+ <meta charset="UTF-8"> 
+ <title>Ma visite virtuelle</title> 
+ 
+ <link rel="stylesheet" href="https://unpkg.com/photo-sphere-viewer/dist/photo-sphere-viewer.css"> 
+ <script src="https://unpkg.com/three/build/three.min.js"></script> 
+ <script src="https://unpkg.com/photo-sphere-viewer/dist/photo-sphere-viewer.js"></script> 
+ 
+ <style> 
+   body { margin: 0; } 
+   #viewer { width: 100vw; height: 100vh; } 
+ </style> 
+</head> 
+<body> 
+ 
+<div id="viewer"></div> 
+ 
+<script> 
+ const viewer = new PhotoSphereViewer.Viewer({ 
+   container: document.getElementById('viewer'), 
+   panorama: 'https://photo-sphere-viewer-data.netlify.app/assets/sphere.jpg', 
+   navbar: true 
+ }); 
+</script> 
+ 
+</body> 
+</html> 
